@@ -22,6 +22,6 @@ This project replicates the baseline classification experiment from the [BD-KDD 
 | KNN | 0.556 | 0.627 | 0.479 | 0.558 |
 
 #### Main finding
-All four models did only a little better than a coin flip. The paper reports about 61% accuracy, and my results land in the same weak range. The features (even creatinine and urea) look almost identical between healthy and sick patients, so the models had very little to learn from. My accuracy also swung from 46% to 57% depending on the random split, so I wouldn't trust the paper's 61% as a solid number.
+All four models did only a little better than a coin flip. The paper reports about 61% accuracy, and my results land in the same weak range. The features (even creatinine and urea) look almost identical between healthy and sick patients, so the models had very little to learn from. My accuracy also swung from 46% to 57% depending on the random split, thus the paper's 61% is skeptical.
 
-Since missing a sick patient is the worst mistake here, recall matters most, and even the best model missed about 40 of 102 sick patients in the test set. I'd pick logistic regression for its simplicity and probability outputs, but I wouldn't use it to diagnose anyone.
+Since missing a sick patient is the worst mistake here, recall matters most, and even the best model missed about 40 of 102 sick patients in the test set. I would pick logistic regression for its simplicity and probability outputs, however I would ultimately not use it to diagnose anyone.
